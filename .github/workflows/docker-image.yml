@@ -27,10 +27,12 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t sebasxd0/docker-graphql:0.0.2 .
-
+        docker build -t sebasxd0/docker-graphql:latest .
+        
     - name: Push Docker image
       run: |
         docker push sebasxd0/docker-graphql:0.0.2
+        docker push sebasxd0/docker-graphql:latest
         
         
     
